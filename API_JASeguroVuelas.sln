@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36203.30 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API_JASeguroVuelas", "API_JASeguroVuelas\API_JASeguroVuelas.csproj", "{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BEE48AB1-BB78-42B7-B213-8E07729F0E83}
+	EndGlobalSection
+EndGlobal
