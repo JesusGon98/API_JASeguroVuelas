@@ -1,6 +1,33 @@
 @API_JASeguroVuelas_HostAddress = http://localhost:5019
 
-GET {{API_JASeguroVuelas_HostAddress}}/weatherforecast/
+### Health Check
+GET {{API_JASeguroVuelas_HostAddress}}/api/health
 Accept: application/json
+
+###
+
+### Obtener todos los contactos
+GET {{API_JASeguroVuelas_HostAddress}}/api/contacto
+Accept: application/json
+
+###
+
+### Obtener contacto por ID
+GET {{API_JASeguroVuelas_HostAddress}}/api/contacto/1
+Accept: application/json
+
+###
+
+### Crear nuevo contacto
+POST {{API_JASeguroVuelas_HostAddress}}/api/contacto
+Content-Type: application/json
+
+{
+  "nombre": "Juan Pérez",
+  "correo": "juan@example.com",
+  "telefono": "555-1234",
+  "origen": "Ciudad de México",
+  "destino": "Cancún"
+}
 
 ###
