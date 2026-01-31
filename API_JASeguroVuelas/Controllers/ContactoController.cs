@@ -82,6 +82,7 @@ namespace API_JASeguroVuelas.Controllers
                 }
 
                 // Crear nuevo contacto
+                var ahora = DateTime.UtcNow;
                 var nuevoContacto = new Contacto
                 {
                     Nombre = request.Nombre,
@@ -89,7 +90,8 @@ namespace API_JASeguroVuelas.Controllers
                     Telefono = request.Telefono,
                     Origen = request.Origen,
                     Destino = request.Destino,
-                    FechaCreacion = DateTime.UtcNow
+                    FechaCreacion = ahora,
+                    FechaActualizacion = ahora
                 };
 
                 await _contactoService.CreateAsync(nuevoContacto);

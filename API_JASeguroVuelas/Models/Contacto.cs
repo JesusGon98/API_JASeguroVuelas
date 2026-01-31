@@ -24,8 +24,15 @@ namespace API_JASeguroVuelas.Models
         [BsonElement("destino")]
         public string Destino { get; set; } = string.Empty;
 
+        [BsonElement("usuarioId")]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string? UsuarioId { get; set; }
+
         [BsonElement("fechaCreacion")]
         public DateTime FechaCreacion { get; set; }
+
+        [BsonElement("fechaActualizacion")]
+        public DateTime FechaActualizacion { get; set; }
     }
 
     public class ContactoRequest
