@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}|API_JASeguroVuelas\\API_JASeguroVuelas.csproj|c:\\users\\usuario\\documents\\proyectos\\api_jasegurovuelas\\api_jasegurovuelas\\models\\reservacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}|API_JASeguroVuelas\\API_JASeguroVuelas.csproj|solutionrelative:api_jasegurovuelas\\models\\reservacion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}|API_JASeguroVuelas\\API_JASeguroVuelas.csproj|c:\\users\\usuario\\documents\\proyectos\\api_jasegurovuelas\\api_jasegurovuelas\\models\\destino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}|API_JASeguroVuelas\\API_JASeguroVuelas.csproj|solutionrelative:api_jasegurovuelas\\models\\destino.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}|API_JASeguroVuelas\\API_JASeguroVuelas.csproj|c:\\users\\usuario\\documents\\proyectos\\api_jasegurovuelas\\api_jasegurovuelas\\models\\reservavuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45ADF4BF-48BD-4C71-90F0-B5F27AFE2046}|API_JASeguroVuelas\\API_JASeguroVuelas.csproj|solutionrelative:api_jasegurovuelas\\models\\reservavuelo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,19 +31,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Reservacion.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\Models\\Reservacion.cs",
+              "RelativeDocumentMoniker": "API_JASeguroVuelas\\Models\\Reservacion.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\Models\\Reservacion.cs",
+              "RelativeToolTip": "API_JASeguroVuelas\\Models\\Reservacion.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T06:52:19.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Destino.cs",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\Models\\Destino.cs",
+              "RelativeDocumentMoniker": "API_JASeguroVuelas\\Models\\Destino.cs",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\Models\\Destino.cs",
+              "RelativeToolTip": "API_JASeguroVuelas\\Models\\Destino.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-21T06:52:15.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "ReservaVuelo.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\Models\\ReservaVuelo.cs",
               "RelativeDocumentMoniker": "API_JASeguroVuelas\\Models\\ReservaVuelo.cs",
               "ToolTip": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\Models\\ReservaVuelo.cs",
               "RelativeToolTip": "API_JASeguroVuelas\\Models\\ReservaVuelo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-31T04:21:38.807Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Reserva.cs",
               "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\Models\\Reserva.cs",
               "RelativeDocumentMoniker": "API_JASeguroVuelas\\Models\\Reserva.cs",
@@ -43,8 +77,7 @@
               "RelativeToolTip": "API_JASeguroVuelas\\Models\\Reserva.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T04:21:35.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-31T04:21:35.537Z"
             }
           ]
         }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("API_JASeguroVuelas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8402db762d6bad9c27274bbc93ecdcb560c682a3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+52b01304684087a2322c867aad5778c9105b8e90")]
 [assembly: System.Reflection.AssemblyProductAttribute("API_JASeguroVuelas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API_JASeguroVuelas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

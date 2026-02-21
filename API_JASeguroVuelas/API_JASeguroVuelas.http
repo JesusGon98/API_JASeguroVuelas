@@ -31,3 +31,25 @@ Content-Type: application/json
 }
 
 ###
+
+### Crear destino - Cancún
+POST {{API_JASeguroVuelas_HostAddress}}/api/destino
+Content-Type: application/json
+
+{
+  "nombre": "Cancún",
+  "descripcion": "Aeropuerto Internacional de Cancún (CUN). Playas de arena blanca, aguas turquesas y la Riviera Maya.",
+  "mejorEpoca": "Diciembre - Abril",
+  "precioMin": 3500,
+  "precioMax": 5500,
+  "etiqueta": "Popular",
+  "foto": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80"
+}
+
+###
+
+### Obtener todos los destinos
+GET {{API_JASeguroVuelas_HostAddress}}/api/destino
+Accept: application/json
+
+###

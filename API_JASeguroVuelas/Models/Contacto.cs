@@ -24,6 +24,9 @@ namespace API_JASeguroVuelas.Models
         [BsonElement("destino")]
         public string Destino { get; set; } = string.Empty;
 
+        [BsonElement("mensaje")]
+        public string? Mensaje { get; set; }
+
         [BsonElement("usuarioId")]
         [BsonRepresentation(BsonType.ObjectId)]
         public string? UsuarioId { get; set; }
@@ -42,5 +45,6 @@ namespace API_JASeguroVuelas.Models
         public string Telefono { get; set; } = string.Empty;
         public string Origen { get; set; } = string.Empty;
         public string Destino { get; set; } = string.Empty;
+        public string? Mensaje { get; set; }
     }
 }

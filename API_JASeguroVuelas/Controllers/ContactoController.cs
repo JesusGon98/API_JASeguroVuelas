@@ -90,6 +90,7 @@ namespace API_JASeguroVuelas.Controllers
                     Telefono = request.Telefono,
                     Origen = request.Origen,
                     Destino = request.Destino,
+                    Mensaje = request.Mensaje,
                     FechaCreacion = ahora,
                     FechaActualizacion = ahora
                 };
@@ -119,6 +120,98 @@ namespace API_JASeguroVuelas.Controllers
                 return StatusCode(500, new 
                 { 
                     message = "Error al crear el contacto",
+                    error = ex.Message
+                });
+            }
+        }
+
+        /// <summary>
+        /// Actualiza una solicitud de contacto existente
+        /// </summary>
+        /// <param name="id">ID del contacto</param>
+        /// <param name="request">Datos actualizados del contacto</param>
+        /// <returns>Contacto actualizado</returns>
+        [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Put(string id, [FromBody] ContactoRequest request)
+        {
+            try
+            {
+                _logger.LogInformation("Actualizando contacto con ID: {Id}", id);
+
+                var existing = await _contactoService.GetByIdAsync(id);
+                if (existing == null)
+                {
+                    return NotFound(new { message = $"No se encontró un contacto con ID {id}" });
+                }
+
+                // Validación básica
+                if (string.IsNullOrWhiteSpace(request.Nombre) ||
+                    string.IsNullOrWhiteSpace(request.Correo) ||
+                    string.IsNullOrWhiteSpace(request.Telefono) ||
+                    string.IsNullOrWhiteSpace(request.Origen) ||
+                    string.IsNullOrWhiteSpace(request.Destino))
+                {
+                    return BadRequest(new { message = "Todos los campos son requeridos" });
+                }
+
+                existing.Nombre = request.Nombre;
+                existing.Correo = request.Correo;
+                existing.Telefono = request.Telefono;
+                existing.Origen = request.Origen;
+                existing.Destino = request.Destino;
+                existing.Mensaje = request.Mensaje;
+                existing.FechaActualizacion = DateTime.UtcNow;
+
+                await _contactoService.UpdateAsync(id, existing);
+
+                _logger.LogInformation("Contacto actualizado exitosamente con ID: {Id}", id);
+                return Ok(existing);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al actualizar contacto");
+                return StatusCode(500, new 
+                { 
+                    message = "Error al actualizar el contacto",
+                    error = ex.Message
+                });
+            }
+        }
+
+        /// <summary>
+        /// Elimina una solicitud de contacto
+        /// </summary>
+        /// <param name="id">ID del contacto</param>
+        /// <returns>Sin contenido</returns>
+        [HttpDelete("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> Delete(string id)
+        {
+            try
+            {
+                _logger.LogInformation("Eliminando contacto con ID: {Id}", id);
+
+                var existing = await _contactoService.GetByIdAsync(id);
+                if (existing == null)
+                {
+                    return NotFound(new { message = $"No se encontró un contacto con ID {id}" });
+                }
+
+                await _contactoService.DeleteAsync(id);
+
+                _logger.LogInformation("Contacto eliminado exitosamente con ID: {Id}", id);
+                return NoContent();
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error al eliminar contacto");
+                return StatusCode(500, new 
+                { 
+                    message = "Error al eliminar el contacto",
                     error = ex.Message
                 });
             }

@@ -25,9 +25,28 @@ builder.Services.AddScoped<IMongoDatabase>(serviceProvider =>
 
 // Registrar servicios
 builder.Services.AddScoped<ContactoService>();
+builder.Services.AddScoped<ReservacionService>();
+builder.Services.AddScoped<DestinoService>();
+builder.Services.AddScoped<VueloService>();
+
+// CORS para conectar con el frontend (Ja_SeguroVuelas)
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyMethod()
+              .AllowAnyHeader();
+    });
+});
 
 // Add services to the container.
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        // Configurar serialización JSON a camelCase para compatibilidad con el frontend
+        options.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+    });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -42,6 +61,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors();
 
 app.UseAuthorization();
 

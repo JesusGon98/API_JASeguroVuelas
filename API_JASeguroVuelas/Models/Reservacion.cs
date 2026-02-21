@@ -4,13 +4,16 @@ using MongoDB.Bson.Serialization.Attributes;
 namespace API_JASeguroVuelas.Models
 {
     /// <summary>
-    /// Vuelos disponibles ofertados por la agencia (modelo alineado con el frontend Ja_SeguroVuelas).
+    /// Reservaciones de vuelo (modelo alineado con el frontend Ja_SeguroVuelas).
     /// </summary>
-    public class Vuelo
+    public class Reservacion
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
+
+        [BsonElement("codigo")]
+        public string Codigo { get; set; } = string.Empty;
 
         [BsonElement("origen")]
         public string Origen { get; set; } = string.Empty;
@@ -21,34 +24,33 @@ namespace API_JASeguroVuelas.Models
         [BsonElement("fecha")]
         public DateTime Fecha { get; set; }
 
-        [BsonElement("hora")]
-        public string Hora { get; set; } = string.Empty;
-
-        [BsonElement("aerolinea")]
-        public string Aerolinea { get; set; } = string.Empty;
-
-        [BsonElement("precio")]
-        public decimal Precio { get; set; }
+        [BsonElement("pasajeros")]
+        public int Pasajeros { get; set; }
 
         [BsonElement("estado")]
         public string Estado { get; set; } = string.Empty;
 
-        [BsonElement("imagen")]
-        public string? Imagen { get; set; }
-
         [BsonElement("fechaCreacion")]
         public DateTime FechaCreacion { get; set; }
+
+        [BsonElement("vueloId")]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string? VueloId { get; set; }
+
+        [BsonElement("usuarioId")]
+        [BsonRepresentation(BsonType.ObjectId)]
+        public string? UsuarioId { get; set; }
     }
 
-    public class VueloRequest
+    public class ReservacionRequest
     {
+        public string Codigo { get; set; } = string.Empty;
         public string Origen { get; set; } = string.Empty;
         public string Destino { get; set; } = string.Empty;
         public DateTime Fecha { get; set; }
-        public string Hora { get; set; } = string.Empty;
-        public string Aerolinea { get; set; } = string.Empty;
-        public decimal Precio { get; set; }
+        public int Pasajeros { get; set; }
         public string Estado { get; set; } = string.Empty;
-        public string? Imagen { get; set; }
+        public string? VueloId { get; set; }
+        public string? UsuarioId { get; set; }
     }
 }
