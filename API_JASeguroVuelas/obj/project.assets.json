@@ -1388,23 +1388,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
+    "C:\\Users\\la20r\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\API_JASeguroVuelas.csproj",
+      "projectUniqueName": "C:\\Users\\la20r\\OneDrive\\Documents\\Proyectos\\Ja_Seguro_Vuelas\\API_JASeguroVuelas\\API_JASeguroVuelas\\API_JASeguroVuelas.csproj",
       "projectName": "API_JASeguroVuelas",
-      "projectPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\API_JASeguroVuelas.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\API_JASeguroVuelas\\API_JASeguroVuelas\\obj\\",
+      "projectPath": "C:\\Users\\la20r\\OneDrive\\Documents\\Proyectos\\Ja_Seguro_Vuelas\\API_JASeguroVuelas\\API_JASeguroVuelas\\API_JASeguroVuelas.csproj",
+      "packagesPath": "C:\\Users\\la20r\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\la20r\\OneDrive\\Documents\\Proyectos\\Ja_Seguro_Vuelas\\API_JASeguroVuelas\\API_JASeguroVuelas\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\la20r\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1473,7 +1473,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
